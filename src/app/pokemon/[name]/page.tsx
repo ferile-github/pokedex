@@ -1,12 +1,6 @@
 import { Suspense } from "react";
 import Loading from "@/app/loading";
-
-import { Metadata } from 'next';
-import { env } from "process";
-import { getAllPokemonPaths, getPokemon } from "@/lib/fetch-pokemon";
-import { Capitalise } from "@/utils/utils";
-import Image from "next/image";
-import Link from "next/link";
+import { getPokemon } from "@/lib/fetch-pokemon";
 import PokemonSingle from "@/components/pokemon/PokemonSingle";
 
 export default async function Page({params}) {

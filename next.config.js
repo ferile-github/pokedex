@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: 'export',
   reactStrictMode: true,
 	distDir: 'dist',
   images: {
@@ -7,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: process.env.API
+        hostname: process.env.NEXT_PUBLIC_API
       },
     ],
   },
