@@ -1,0 +1,21 @@
+module.exports = {
+  rules: {
+    'color-no-invalid-hex': true,
+    "declaration-block-no-redundant-longhand-properties" : null,
+    "no-missing-end-of-source-newline" : null,
+    "selector-list-comma-newline-after" : null,
+    "font-family-name-quotes" : null,
+    "max-line-length" : null,
+    "selector-descendant-combinator-no-non-space" : null,
+    "rule-empty-line-before" : null,
+    "max-empty-lines" : null,
+    "selector-class-pattern": null,
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["tailwind", "screen", "define-mixin", "mixin"] }],
+    "function-no-unknown": [true, {"ignoreFunctions": ["theme"] }],
+    "declaration-block-trailing-semicolon": null,
+    "color-function-notation": null,
+    "no-descending-specificity": null,
+    "alpha-value-notation": null,
+    "comment-empty-line-before": null,
+  },
+}

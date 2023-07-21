@@ -1,0 +1,50 @@
+.portrait {
+	object-position: center;
+	height: 150px;
+	width: 100%;
+}
+
+.portrait_large {
+	object-position: center;
+	height: 240px;
+	width: 100%;
+}
+
+.pokemon__data,
+.pokemon__item {
+	padding: 1rem;
+	border-radius: .6rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.pokemon__data {
+	transition: all 400ms ease-in-out;
+	transform: scale(.5);
+	opacity: 0;
+
+	gap: theme('spacing.xs');
+
+	position: absolute;
+	z-index: 10;
+	top: -50%;
+	left: -2rem;
+	right: -2rem;
+
+	background-color: theme('colors.white');
+	border: solid 7px theme('colors.yellow');
+
+}
+
+.pokemon__item {
+	background-color: theme('colors.lightgray');
+	overflow: hidden;
+
+	&:hover {
+		overflow: visible;
+		.pokemon__data {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}

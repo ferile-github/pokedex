@@ -1,0 +1,144 @@
+// Headings
+// ------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: theme('fontFamily.heading');
+	margin-bottom: 1.2em;
+	text-wrap: balance;
+	font-weight: theme('fontWeight.normal');
+	line-height: theme('lineHeight.snug');
+}
+
+h1, .h1 {font-size: theme('fontSize.h1');}
+h2, .h2 {font-size: theme('fontSize.h2');}
+h3, .h3 {font-size: theme('fontSize.h3');}
+h4, .h4 {font-size: theme('fontSize.h4');}
+h5, .h5 {font-size: theme('fontSize.h5');}
+h6, .h6 {font-size: theme('fontSize.h6');}
+
+@screen sm {
+	h1, .h1 {font-size: theme('fontSize.h1-sm');	}
+}
+
+
+// Generic tags
+// ------------------------------------------------
+img {
+	max-width: 100%;
+}
+
+cite {
+	font-style: initial;
+}
+
+label {
+	cursor: pointer;
+}
+
+strong,
+.strong {
+	font-weight: theme('fontWeight.bold');
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+a {
+	color: var(--text-link-color);
+	font-weight: theme('fontWeight.bold');
+
+	&:hover {
+		color: var(--text-link-color-hover);
+	}
+
+	&:focus {
+		color: var(--text-link-color-focus);
+	}
+}
+
+
+.pokemon__type,
+.pokemon__ability,
+.pokemon__stat {
+	padding: 0 8px;
+	color: theme('colors.white');
+	border-radius: 3px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: .9rem;
+}
+
+.pokemon__ability {
+	background-color: theme('colors.steel');
+}
+.pokemon__stat {
+	background-color: theme('colors.gray');
+}
+
+
+
+.type {
+	&-fire {
+		background-color: theme('colors.orange') ;
+	}
+	&-grass {
+		background-color: theme('colors.green') ;
+	}
+	&-poison {
+		background-color: theme('colors.purple') ;
+	}
+	&-water {
+		background-color: theme('colors.blue') ;
+	}
+	&-bug {
+		background-color: theme('colors.mint') ;
+	}
+	&-normal {
+		background-color: theme('colors.cobalt') ;
+	}
+	&-electric {
+		background-color: theme('colors.yellow') ;
+	}
+		&-fairy {
+		background-color: theme('colors.pink') ;
+	}
+	&-fighting {
+		background-color: theme('colors.pine') ;
+	}
+	&-psychic {
+		background-color: theme('colors.magenta') ;
+	}
+	&-rock {
+		background-color: theme('colors.rock') ;
+	}
+	&-ice {
+		background-color: theme('colors.ice') ;
+	}
+	&-steel {
+		background-color: theme('colors.steel') ;
+	}
+	&-ghost {
+		background-color: theme('colors.ghost') ;
+	}
+	&-dragon {
+		background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+	}
+	&-flying {
+		background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+	}
+	&-ground {
+		background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+	}
+
+}

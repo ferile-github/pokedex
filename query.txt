@@ -1,0 +1,53 @@
+query MyQuery {
+  posts {
+    edges {
+      node {
+        id
+        date
+        title
+        slug
+        featuredImage {
+          node {
+            mediaItemUrl
+            altText
+          }
+        }
+        extraPostInfo {
+          authorExcerpt
+          previewImage {
+            mediaItemUrl
+            sourceUrl
+            srcSet
+            altText
+          }
+        }
+      }
+    }
+  }
+}
+
+
+query MyQuery2 {
+  recipes {
+    edges {
+      node {
+        content
+        recipeId
+        slug
+        title
+        featuredImage {
+          node {
+            mediaItemUrl
+          }
+        }
+        recipeFields {
+          cookingTime
+          fieldGroupName
+          ingredients
+          method
+          preparationTime
+        }
+      }
+    }
+  }
+}

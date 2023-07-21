@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  min-height: stretch;
+	padding-top: 50px;
+	color: theme('colors.black');
+	background-color: theme('colors.slate');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.anchor {
+  scroll-margin-top: 120px;
+}
+
+.site-content {
+  min-height: calc(100vh);
+}
+
+.container {
+	max-width: 1440px !important;
+}
