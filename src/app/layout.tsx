@@ -6,6 +6,7 @@ import { env } from 'process';
 
 import logo from '../public/pokemon-logo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
 	title: env.SITE_NAME,
@@ -27,7 +28,10 @@ export default function RootLayout({ children }: Props) {
 			<body suppressHydrationWarning={true} >
 				<Fonts />
 				<main id="site-content" className="site-content flex flex-col min-h-screen">
+					<Link href={'/'}>
 					<Image src={logo} height={200} width={545} className='mx-auto block mb-lg' alt='Pokemon logo' />
+					</Link>
+
 					<Container>
 						{children}
 					</Container>
