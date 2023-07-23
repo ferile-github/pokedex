@@ -1,7 +1,6 @@
 import PokemonItem from '@/components/pokemon/PokemonItem';
-import { getAllPokemon } from '../../lib/fetch-pokemon';
+import { getAllPokemon } from '@/fetch/fetch-pokemon';
 import { env } from 'process';
-import Link from 'next/link';
 import Button from '@/components/ui/button';
 
 export const metadata = {

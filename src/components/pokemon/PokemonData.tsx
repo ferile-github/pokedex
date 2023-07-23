@@ -1,9 +1,10 @@
 'use client';
-import { Capitalise, getPokemonID } from '@/utils/utils';
+import { Capitalise } from '@/utils/utils';
 import styles from '@/styles/modules/Pokemon.module.scss';
 import Image from 'next/image';
+import { PokemonDataModel } from '@/interfaces/pokemon';
 
-export default function PokemonData({ pokemonID, pokemonData }) {
+export default function PokemonData({ pokemonID, pokemonData } : {pokemonID : string, pokemonData : PokemonDataModel}) {
   return (
     <div className={`${styles.pokemon__data} shadow-md`}>
       <Image

@@ -20,31 +20,32 @@
 
 .pokemon__data {
 	transition: all 400ms ease-in-out;
-	transform: scale(.5);
+	transform: scale(.9);
 	opacity: 0;
 
 	gap: theme('spacing.xs');
 
 	position: absolute;
 	z-index: 10;
-	top: -50%;
+	top: -20%;
 	left: -2rem;
 	right: -2rem;
 
 	background-color: theme('colors.white');
 	border: solid 7px theme('colors.yellow');
-
 }
 
 .pokemon__item {
 	background-color: theme('colors.lightgray');
 	overflow: hidden;
+	position: relative;
 
 	&:hover {
 		overflow: visible;
 		.pokemon__data {
 			opacity: 1;
 			transform: scale(1);
+			top: -50%;
 		}
 	}
 }
