@@ -4,7 +4,7 @@ import Container from '@/components/global/Container';
 import React from 'react';
 import { env } from 'process';
 
-import logo from '../public/pokemon-logo.svg';
+import logo from '@/public/pokemon-logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
