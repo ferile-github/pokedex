@@ -28,9 +28,11 @@ export default function RootLayout({ children }: Props) {
 			<body suppressHydrationWarning={true} >
 				<Fonts />
 				<main id="site-content" className="site-content flex flex-col min-h-screen">
-					<Link href={'/'}>
-					<Image src={logo} height={200} width={545} className='mx-auto block mb-lg' alt='Pokemon logo' />
-					</Link>
+					<div className="flex justify-center">
+						<Link href={'/'}>
+							<Image src={logo} height={200} width={545} className='mb-lg' alt='Pokemon logo' />
+						</Link>
+					</div>
 
 					<Container>
 						{children}

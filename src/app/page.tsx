@@ -2,6 +2,7 @@ import PokemonItem from '@/components/pokemon/PokemonItem';
 import { getAllPokemon } from '../lib/fetch-pokemon';
 import Link from 'next/link';
 import { env } from 'process';
+import Button from '@/components/ui/button';
 
 export const metadata = {
   title: 'Pokedex',
@@ -16,17 +17,22 @@ export default async function Page() {
       <ol className="flex justify-between mb-lg">
 				<li></li>
         <li>
-            <Link className="flex p-2 text-white" href={`1`}>
-              Next Page
-            </Link>
+					<Button style="primary" link={`1`} title='Next' />
         </li>
       </ol>
 
-      <div className={`grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-xs mb-[400px]`}>
+      <div className={`grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-xs mb-md`}>
         {allPokemon.results.map((pokemon) => (
           <PokemonItem key={pokemon.name} pokemon={pokemon} />
         ))}
       </div>
+
+			<ol className="flex justify-between  mb-[400px]">
+				<li></li>
+        <li>
+					<Button style="primary" link={`1`} title='Next' />
+        </li>
+      </ol>
     </>
   );
 }

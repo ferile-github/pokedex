@@ -1,0 +1,32 @@
+:root {
+  /* Buttons */
+  /* ---------------------------------------------- */
+  /* Primary */
+  --btn-primary-radius: 3px;
+  --btn-primary-padding: 10px 16px;
+  --btn-primary-border-width: 10px;
+  --btn-primary-background: theme('colors.yellow');
+  --btn-primary-color: theme('colors.ocean');
+
+  --btn-primary-border-color: theme('colors.ocean');
+  --btn-primary-background-hover: #fcea74;
+  --btn-primary-color-hover: theme('colors.ocean');
+  --btn-primary-border-color-hover: theme('colors.ocean');
+  --btn-primary-background-disabled: theme('colors.slate');
+  --btn-primary-color-disabled: theme('colors.white');
+  --btn-primary-border-color-disabled: theme('colors.slate');
+
+	/* Secondary */
+  --btn-secondary-radius: 18px;
+  --btn-secondary-padding: 12px 18px;
+  --btn-secondary-border-width: 2px;
+  --btn-secondary-background: theme('colors.magenta');
+  --btn-secondary-color: theme('colors.white');
+  --btn-secondary-border-color: theme('colors.magenta');
+  --btn-secondary-background-hover: theme('colors.purple');
+  --btn-secondary-color-hover: theme('colors.white');
+  --btn-secondary-border-color-hover: theme('colors.transparent');
+  --btn-secondary-background-disabled: theme('colors.white');
+  --btn-secondary-color-disabled: theme('colors.slate');
+  --btn-secondary-border-color-disabled: theme('colors.slate');
+}
